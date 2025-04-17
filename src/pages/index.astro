@@ -1,11 +1,23 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-	<Welcome />
+  <h1 class="text-6xl font-bold"><span id="cursive">BOTONERA</span> LHDA</h1>
+  <p>
+    Botonera hecha especialmente para reproducir en un instante los memes
+    caracteristicos de <span class="font-bold">
+      <a
+        href="https://www.youtube.com/@losherederosdealberdi"
+        target="_blank"
+        rel="noopener noreferrer">Los Herederos de Alberdi</a
+      ></span
+    >
+  </p>
 </Layout>
+
+<style>
+  #cursive {
+    font-family: "Luxurious";
+  }
+</style>

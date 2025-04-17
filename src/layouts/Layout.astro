@@ -1,22 +1,62 @@
+---
+import "@/styles/global.css";
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+---
+
 <!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
-	</head>
-	<body>
-		<slot />
-	</body>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta
+      name="description"
+      content="LHDA Botonera: Una lista de botones que reproducen los memes mas iónicos e incluso algunos que no conocías"
+    />
+    <meta
+      name="keywords"
+      content="LHDA, lhda, botonera, Los Herederos de Alberdi, Milei"
+    />
+
+    <meta name="author" content="Juan Martin Monti" />
+
+    <meta property="og:url" content={Astro.url} />
+    <meta property="og:title" content="LHDA Botonera" />
+    <meta
+      property="og:description"
+      content="LHDA Botonera: Una lista de botones que reproducen los memes mas iónicos e incluso algunos que no conocías"
+    />
+    <meta property="og:image" content="../assets/LHDA-large.webp" />
+    <meta property="og:locale" content="es_AR" />
+
+    <meta name="twitter:card" content="LHDA-large" />
+    <meta name="twitter:site" content="@LHDA16" />
+    <meta name="twitter:title" content="LHDA Botonera" />
+    <meta name="twitter:creator" content="@Los Herederos de Alberdi" />
+    <meta
+      name="twitter:description"
+      content="LHDA Botonera: Una lista de botones que reproducen los memes mas iónicos e incluso algunos que no conocías"
+    />
+    <title>LHDA Botonera</title>
+  </head>
+  <body>
+    <Header />
+    <main>
+      <slot />
+    </main>
+    <Footer />
+  </body>
 </html>
 
 <style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
+  html,
+  body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    color-scheme: dark;
+    background-color: #0e1114;
+    color: #fff;
+  }
 </style>
