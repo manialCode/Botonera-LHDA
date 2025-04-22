@@ -1,0 +1,69 @@
+<header class="py-4 px-32">
+  <nav
+    id="header-nav"
+    class="fixed top-0 right-0 w-full py-2 flex items-center justify-between h-24 mx-auto bg-[#0e1114] text-white text-lg font-bold shadow-md rounded-lg transition duration-300 ease-in-out flex-col md:flex-row md:gap-0 gap-4 md:justify-between md:items-center md:px-10 px-4"
+  >
+    <div class="flex items-center gap-4 font-bold">
+      <picture>
+        <img
+          src="https://yt3.googleusercontent.com/8K5lpYbn1xFtg9JyEIP-PHCULOKIuSZPTq0fADy9ucCUx9ELfu3pHW75GfUwuOTXhxhuKuY80A=s160-c-k-c0x00ffffff-no-rj"
+          alt="LHDA Logo"
+          class="h-16 w-16 rounded-full"
+        />
+      </picture>
+      <h1 class="text-3xl font-bold">
+        <span class="font-[Luxurious] text-primary">BOTONERA</span>
+      </h1>
+    </div>
+    <ul class="flex justify-center gap-12 text-2xl font-semibold">
+      <li>
+        <a
+          href="/"
+          class="block py-2 px-3 text-white bg-primary transition duration-300 rounded-sm md:bg-transparent md:text-primary md:p-0 dark:text-white md:dark:text-primary"
+          aria-current="page">Home</a
+        >
+      </li>
+      <li>
+        <a
+          href="/about"
+          class="transition duration-300 block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 dark:text-white md:dark:hover:text-primary dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+          >About</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://www.youtube.com/@Lhdaclips"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="transition duration-300 block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 dark:text-white md:dark:hover:text-primary dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+          >Fuente</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://personal-portfolio-omega-five-92.vercel.app/"
+          class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 dark:text-white md:dark:hover:text-primary dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+          >Contact</a
+        >
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<style>
+  #header-nav {
+    animation: blur linear both;
+    animation-timeline: scroll();
+    animation-range: 0 500px;
+  }
+
+  @keyframes blur {
+    to {
+      box-shadow:
+        0px 5px 50px -5px rgba(0, 0, 0, 0.1),
+        0px 0px 0 1px rgba(0, 0, 0, 0.3);
+      background: rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(10px);
+    }
+  }
+</style>
