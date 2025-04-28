@@ -1,7 +1,7 @@
 export interface video {
   id: Number;
-  title: String;
-  link: String | URL;
-  thumbnail: String | URL;
+  title: string;
+  link: string;
+  thumbnail: string;
   views: string;
 }
