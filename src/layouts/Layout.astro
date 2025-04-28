@@ -17,13 +17,10 @@ const { title, description } = Astro.props;
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta
-      name="description"
-      content="LHDA Botonera: Una lista de botones que reproducen los memes mas iónicos e incluso algunos que no conocías"
-    />
+    <meta name="description" content={description} />
     <meta
       name="keywords"
-      content="LHDA, lhda, botonera, Los Herederos de Alberdi, Milei"
+      content="LHDA, lhda, botonera, Los Herederos de Alberdi, Milei, memes, memes argentinos, memes de Milei, memes de los herederos de Alberdi, botonera lhda, botonera de los herederos de Alberdi, botonera de Milei, memes de Milei"
     />
 
     <meta name="author" content="Juan Martin Monti" />
@@ -31,7 +28,10 @@ const { title, description } = Astro.props;
     <meta property="og:url" content={Astro.url} />
     <meta property="og:title" content="LHDA Botonera" />
     <meta property="og:description" content={description} />
-    <meta property="og:image" content="../../public/LHDA-large.webp" />
+    <meta
+      property="og:image"
+      content="https://yt3.googleusercontent.com/8K5lpYbn1xFtg9JyEIP-PHCULOKIuSZPTq0fADy9ucCUx9ELfu3pHW75GfUwuOTXhxhuKuY80A=s160-c-k-c0x00ffffff-no-rj"
+    />
     <meta property="og:locale" content="es_AR" />
 
     <meta name="twitter:card" content="LHDA-large" />
