@@ -3,5 +3,12 @@ export interface video {
   title: string;
   link: string;
   thumbnail: string;
-  views: string;
+  views: Number;
+}
+
+export enum SortBy {
+  NONE = "none",
+  TITLE = "title",
+  VIEW = "views",
+  LINK = "link",
 }
