@@ -1,7 +1,7 @@
 ---
+import  ButtonsPanel  from "@/components/ButtonsPanel.tsx";
 import Layout from "../layouts/Layout.astro";
-import { supabase } from "../lib/supabase";
-import { type video } from "@/lib/types/data";
+import { supabase } from "@/lib/supabase";
 
 const { data: videos, error } = await supabase
   .from("videos")
@@ -22,26 +22,8 @@ const { data: videos, error } = await supabase
         ></span
       > -->
     </p>
-    <h1 class="text-white text-4xl font-bold text-center">🎬 Lista de videos</h1>
-      {error && <p>Error: {error.message}</p>}
-      <ul class="grid md:grid-cols-4  m-auto place-content-center h-[900px] overflow-auto w-[80%]">
-        {
-          videos?.map((video :video) => (
-            <li class="p-4 bg-[#0e1114] group text-white rounded-lg">
-               <a href={video.link} target="_blank" class="relative bg-transparent hover:bg-black/50 transition duration-300 block">
-                 <picture>
-                   <img src={video.thumbnail} alt={video.title} class="rounded-lg aspect-video object-cover w-full" />
-                 </picture>
-                 <div class="bg-black/60 group-hover:bg-transparent transition duration-300 absolute inset-0 rounded-lg overflow-hidden"></div>
-                 <span class="absolute text-xl truncate inset-0 flex items-center justify-center text-center px-2 z-10 group-hover:text-transparent transition duration-300 m-5">
-                   <strong>{video.title}</strong>
-                 </span>
-               </a>
-            </li>
-
-          ))
-        }
-      </ul>
+    <h1 class="text-white text-4xl my-4 font-bold text-center">🎬 Lista de videos</h1>
+     <ButtonsPanel videos={videos} error={error?.message} client:visible />
   </section>
 </Layout>
 
